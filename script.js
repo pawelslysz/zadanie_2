@@ -1,25 +1,25 @@
-let current;
-let currentStreakNumber;
-let bestStreakNumber;
-let time;
-let userName;
-let mToAchieve;
-let first;
-let second;
-let third;
-let minutes_1;
-let minutes_2;
-let minutes_3;
-let minutes_4;
-let yourPlace;
+let currentMinutes;                                 //  set current mins of goal
+let currentStreakNumber;                            //  set current user's streak
+let bestStreakNumber;                               //  set best user's streak
+let time;                                           //  set <span> is that weekly or monthly goal
+let userName;                                       // set username
+let mToAchieve;                                     //  set how many mins to achieve goal
+let first;                                          //  set first place on the leaderboard
+let second;                                         //  set second place on the leaderboard
+let third;                                          //  set third place on the leaderboard
+let minutes_1;                                      //  set mins on first place on the leaderboard
+let minutes_2;                                      //  set mins on second place on the leaderboard
+let minutes_3;                                      //  set mins on third place on the leaderboard
+let minutes_4;                                      //  set mins on user's place on the leaderboard
+let yourPlace;                                      //  set user's place on the leaderboard
 
 function week() {
-    current = 38;
+    currentMinutes = 38;
     currentStreakNumber = 4;
     bestStreakNumber = 12;
     time = "WEEKLY";
     userName = "PEDRO";
-    mToAchieve = 12;
+    mToAchieve = 50 - currentMinutes;
     first = "Walter Wynne";
     second = "Annabel Ferdinand";
     third = "Marty McFly";
@@ -29,11 +29,11 @@ function week() {
     minutes_4 = 38;
     yourPlace = 7;
 
-    document.getElementById("currentMinutes").innerHTML = current + "m";
+    document.getElementById("currentMinutes").innerHTML = currentMinutes + "m";
 
-    current = current * 100 / 50;
-    let number = 490 - (490 * current) / 100;
-    document.getElementById("percent").style.strokeDashoffset = -number;
+    currentMinutes = currentMinutes * 100 / 50;
+    let number = 490 - (490 * currentMinutes) / 100;
+    document.getElementById("percent").style.strokeDashoffset = -number;    //  set progress bar
     
     document.getElementById("currentStreakNumber").innerHTML = currentStreakNumber;
     
@@ -58,7 +58,7 @@ function week() {
 }
 
 function month() {
-    current = 12;
+    currentMinutes = 12;
     currentStreakNumber = 7;
     bestStreakNumber = 44;
     time = "MONTHLY";
@@ -73,11 +73,11 @@ function month() {
     minutes_4 = 12;
     yourPlace = 9;
     
-    document.getElementById("currentMinutes").innerHTML = current + "m";
+    document.getElementById("currentMinutes").innerHTML = currentMinutes + "m";
 
-    current = current * 100 / 50;
-    let number = 490 - (490 * current) / 100;
-    document.getElementById("percent").style.strokeDashoffset = -number;
+    currentMinutes = currentMinutes * 100 / 50;
+    let number = 490 - (490 * currentMinutes) / 100;
+    document.getElementById("percent").style.strokeDashoffset = -number;    //  set progress bar
     
     document.getElementById("currentStreakNumber").innerHTML = currentStreakNumber;
     
