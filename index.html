@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leaderboard</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="script" href="script.js" type="text/javascript" />
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+</head>
+<body onload="week()">
+
+	<div id="canva">
+	<svg class="main">
+		<rect id="main" rx="10" ry="10" x="0" y="0" width="574" height="859">
+		</rect>
+	</svg>
+	<!--Progress bar-->
+	<svg class="progressBar" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	version="1.1" x="0px" y="0px" width="130px" height="720px" viewBox="0 14 216.1 188.4" 
+	enable-background="new 0 14 216.1 188.4" xml:space="preserve">
+	
+		<path fill="none" stroke="#dfe3e9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" 
+		stroke-miterlimit="10" d="   M 177.5, 181.4   c 19.4-18.4, 31.5-44.5, 31.5-73.3   c 0-55.8-45.2-101-101-101   
+		S 7,52.2,7,108   c 0,28.9,12.1,54.9,31.5,73.3">
+		</path>
+		
+		<path id="percent" class="progress" fill="none" stroke="#4990e2" stroke-width="8" stroke-linecap="round" 
+		stroke-linejoin="round" stroke-miterlimit="10" d="   M 177.5, 181.4   c 19.4-18.4, 31.5-44.5, 31.5-73.3   
+		c 0-55.8-45.2-101-101-101   S 7,52.2,7,108   c 0,28.9,12.1,54.9,31.5,73.3">
+		</path>
+	</svg>
+
+
+
+	<svg class="bestStreakRectangle">
+		<rect id="bestStreakRectangle" rx="10" ry="10" x="0" y="0" width="150" height="113">
+		</rect>
+	</svg>
+	<svg class="currentStreakRectangle">
+		<rect id="currentStreakRectangle" rx="10" ry="10" x="0" y="0" width="150" height="113">
+		</rect>
+	</svg>
+	<div id="leaderboard">
+		<span>LEADERBOARD</span>
+	</div>
+	<div id="currentStreak">
+		<span>Current Streak</span>
+	</div>
+	<div id="bestStreak">
+		<span>Best Streak</span>
+	</div>
+	<div id="currentStreakNumber">
+	</div>
+	<div id="bestStreakNumber">
+	</div>
+	<div id="minsToAchieve">
+		<span id="mToAchieve" style="color: rgb(0, 0, 0); font-weight: bold"> </span><span style="color:rgb(107, 107, 107)">more mins to achieve this week's Goal</span>
+	</div>
+	<div id="title">
+		<span id="name">PEDRO</span><span>'S </span><span id="time"></span><span> GOAL</span>
+	</div>
+	<svg class="rectangle_1">
+		<rect id="rectangle_1" rx="10" ry="10" x="0" y="0" width="521" height="45">
+		</rect>
+	</svg>
+	<div id="first">
+	</div>
+	<div id="minutes_1">
+	</div>
+	<svg class="rectangle_2">
+		<rect id="rectangle_2" rx="10" ry="10" x="0" y="0" width="521" height="45">
+		</rect>
+	</svg>
+	<svg class="rectangle_3">
+		<rect id="rectangle_3" rx="10" ry="10" x="0" y="0" width="521" height="45">
+		</rect>
+	</svg>
+	<svg class="rectangle_4">
+		<rect id="rectangle_4" rx="10" ry="10" x="0" y="0" width="521" height="45">
+		</rect>
+	</svg>
+	<div id="second">
+	</div>
+	<div id="minutes_2">
+	</div>
+	<div id="third">
+	</div>
+	<div id="minutes_3">
+	</div>
+	<div id="you">
+		<span>You!</span>
+	</div>
+	<div id="minutes_4">
+	</div>
+	<svg class="ellipse_1">
+		<ellipse id="ellipse_1" rx="16" ry="15" cx="16" cy="15">
+		</ellipse>
+	</svg>
+	<svg class="ellipse_2">
+		<ellipse id="ellipse_2" rx="16" ry="15" cx="16" cy="15">
+		</ellipse>
+	</svg>
+	<svg class="ellipse_3">
+		<ellipse id="ellipse_3" rx="16" ry="15" cx="16" cy="15">
+		</ellipse>
+	</svg>
+	<svg class="ellipse_4">
+		<ellipse id="ellipse_4" rx="16" ry="15" cx="16" cy="15">
+		</ellipse>
+	</svg>
+	<div id="n_">
+		<span>1</span>
+	</div>
+	<div id="n__">
+		<span>2</span>
+	</div>
+	<div id="n__ba">
+		<span>3</span>
+	</div>
+	<div id="n__bb">
+		
+	</div>
+
+	<div id="WeekMonth">
+		<select id="timeSelect" class="form-select" onchange="changeTime()"="background-color: rgb(233, 233, 233);">
+			<option value="week">Week</option>
+			<option value="month" onclick="changeTime()">Month</option>
+		</select>
+	</div>
+	<svg class="ellipse_2-1">
+		<ellipse id="ellipse_2-1" rx="7.5" ry="7.5" cx="7.5" cy="7.5">
+		</ellipse>
+	</svg>
+	<svg class="arrow_1" viewBox="0 0 19.5 23.132">
+		<path id="arrow_1" d="M 9.749999046325684 0 L 19.5 23.1318359375 L 9.749999046325684 19.50761032104492 L 0 23.1318359375 L 9.749999046325684 0 Z">
+		</path>
+	</svg>
+	<svg class="arrow_2" viewBox="0 0 19.5 23.132">
+		<path id="arrow_2" d="M 9.749999046325684 0 L 19.5 23.1318359375 L 9.749999046325684 19.50761032104492 L 0 23.1318359375 L 9.749999046325684 0 Z">
+		</path>
+	</svg>
+	<svg class="arrow_3" viewBox="0 0 19.5 23.132">
+		<path id="arrow_3" d="M 9.749999046325684 0 L 19.5 23.1318359375 L 9.749999046325684 19.50761032104492 L 0 23.1318359375 L 9.749999046325684 0 Z">
+		</path>
+	</svg>
+	<div id="goal">
+		<span>50m Goal</span>
+	</div>
+	<div id="current">
+		<span>Current</span>
+	</div>
+	<div id="currentMinutes">
+	</div>
+</div>
+
+
+
+
+<script src="script.js" type="text/javascript"></script>
+
+</body>
+</html>

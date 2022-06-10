@@ -1,0 +1,575 @@
+.mediaViewInfo {
+    --web-view-name: iPad mini – 1;
+    --web-view-id: canva;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+:root {
+    --web-view-ids: canva;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+#canva {
+    position: absolute;
+    width: 744px;
+    height: 1133px;
+    background-color: rgba(53,10,64,1);
+    overflow: hidden;
+    --web-view-name: iPad mini – 1;
+    --web-view-id: canva;
+    --web-scale-on-resize: true;
+    --web-enable-deep-linking: true;
+}
+#main {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.main {
+    position: absolute;
+    overflow: visible;
+    width: 574px;
+    height: 859px;
+    left: 85px;
+    top: 137px;
+}
+.progressBar {
+    position: absolute;
+    overflow: visible;
+    left: 109px;
+}
+.progress {
+    stroke-dasharray: 490; 
+    stroke-dashoffset: 0;
+}
+#bestStreakRectangle {
+    fill: rgba(245,245,245,1);
+}
+.bestStreakRectangle {
+    position: absolute;
+    overflow: visible;
+    width: 150px;
+    height: 113px;
+    left: 483px;
+    top: 355px;
+}
+#currentStreakRectangle {
+    fill: rgba(245,245,245,1);
+}
+.currentStreakRectangle {
+    position: absolute;
+    overflow: visible;
+    width: 150px;
+    height: 113px;
+    left: 309px;
+    top: 355px;
+}
+#leaderboard {
+    left: 112px;
+    top: 547px;
+    position: absolute;
+    overflow: visible;
+    width: 101px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,136,255,1);
+}
+#currentStreak {
+    left: 334px;
+    top: 431px;
+    position: absolute;
+    overflow: visible;
+    width: 102px;
+    height: 20px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#bestStreak {
+    left: 519px;
+    top: 431px;
+    position: absolute;
+    overflow: visible;
+    width: 80px;
+    height: 20px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#currentStreakNumber {
+    left: 372px;
+    top: 374px;
+    position: absolute;
+    overflow: visible;
+    width: 17px;
+    height: 40px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(0,0,0,1);
+}
+#bestStreakNumber {
+    left: 539px;
+    top: 374px;
+    position: absolute;
+    overflow: visible;
+    width: 41px;
+    height: 40px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    color: rgba(0,0,0,1);
+}
+#minsToAchieve {
+    left: 309px;
+    top: 283px;
+    position: absolute;
+    overflow: visible;
+    width: 204px;
+    height: 40px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,0,0,1);
+}
+#title {
+    left: 112px;
+    top: 193px;
+    position: absolute;
+    overflow: visible;
+    width: 180px;
+    height: 20px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(0,136,255,1);
+}
+#rectangle_1 {
+    fill: rgba(255,255,255,1);
+}
+.rectangle_1 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 539px;
+    height: 63px;
+    left: 112px;
+    top: 622px;
+}
+#first {
+    left: 185px;
+    top: 631px;
+    position: absolute;
+    overflow: visible;
+    width: 125px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#minutes_1 {
+    left: 514px;
+    top: 631px;
+    position: absolute;
+    overflow: visible;
+    width: 51px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#rectangle_2 {
+    fill: rgba(255,255,255,1);
+}
+.rectangle_2 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 539px;
+    height: 63px;
+    left: 112px;
+    top: 690px;
+}
+#rectangle_3 {
+    fill: rgba(255,255,255,1);
+}
+.rectangle_3 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 539px;
+    height: 63px;
+    left: 112px;
+    top: 767px;
+}
+#rectangle_4 {
+    fill: rgba(79,159,76,1);
+}
+.rectangle_4 {
+    filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+    position: absolute;
+    overflow: visible;
+    width: 539px;
+    height: 63px;
+    left: 112px;
+    top: 844px;
+}
+#second {
+    left: 185px;
+    top: 699px;
+    position: absolute;
+    overflow: visible;
+    width: 168px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#minutes_2 {
+    left: 514px;
+    top: 699px;
+    position: absolute;
+    overflow: visible;
+    width: 40px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#third {
+    left: 185px;
+    top: 776px;
+    position: absolute;
+    overflow: visible;
+    width: 110px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#minutes_3 {
+    left: 512px;
+    top: 776px;
+    position: absolute;
+    overflow: visible;
+    width: 40px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(112,112,112,1);
+}
+#you {
+    left: 185px;
+    top: 853px;
+    position: absolute;
+    overflow: visible;
+    width: 39px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#minutes_4 {
+    left: 512px;
+    top: 853px;
+    position: absolute;
+    overflow: visible;
+    width: 40px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#ellipse_1 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(79,159,76,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.ellipse_1 {
+    position: absolute;
+    overflow: visible;
+    width: 32px;
+    height: 30px;
+    left: 130px;
+    top: 631px;
+}
+#ellipse_2 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(194,194,194,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.ellipse_2 {
+    position: absolute;
+    overflow: visible;
+    width: 32px;
+    height: 30px;
+    left: 130px;
+    top: 698px;
+}
+#ellipse_3 {
+    fill: rgba(255,255,255,1);
+    stroke: rgba(79,159,76,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.ellipse_3 {
+    position: absolute;
+    overflow: visible;
+    width: 32px;
+    height: 30px;
+    left: 130px;
+    top: 775px;
+}
+#ellipse_4 {
+    fill: rgba(79,159,76,1);
+    stroke: rgba(255,255,255,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.ellipse_4 {
+    position: absolute;
+    overflow: visible;
+    width: 32px;
+    height: 30px;
+    left: 130px;
+    top: 853px;
+}
+#n_ {
+    left: 141px;
+    top: 631px;
+    position: absolute;
+    overflow: visible;
+    width: 12px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(79,159,76,1);
+}
+#n__ {
+    left: 141px;
+    top: 698px;
+    position: absolute;
+    overflow: visible;
+    width: 12px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(194,194,194,1);
+}
+#n__ba {
+    left: 141px;
+    top: 775px;
+    position: absolute;
+    overflow: visible;
+    width: 12px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(79,159,76,1);
+}
+#n__bb {
+    left: 141px;
+    top: 853px;
+    position: absolute;
+    overflow: visible;
+    width: 12px;
+    white-space: nowrap;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: rgba(255,255,255,1);
+}
+#Rectangle_9 {
+    fill: rgba(245,245,245,1);
+    stroke: rgba(112,112,112,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.Rectangle_9 {
+    position: absolute;
+    overflow: visible;
+    width: 123px;
+    height: 38px;
+    left: 510px;
+    top: 537px;
+}
+#WeekMonth {
+    left: 523px;
+    top: 544px;
+    position: absolute;
+    overflow: visible;
+    width: 100px;
+}
+#ellipse_2-1 {
+    fill: rgba(194,194,194,1);
+    stroke: rgba(194,194,194,1);
+    stroke-width: 1px;
+    stroke-linejoin: miter;
+    stroke-linecap: butt;
+    stroke-miterlimit: 4;
+    shape-rendering: auto;
+}
+.ellipse_2-1 {
+    position: absolute;
+    overflow: visible;
+    width: 15px;
+    height: 15px;
+    left: 599px;
+    top: 705px;
+}
+#arrow_1 {
+    fill: rgba(79,159,76,1);
+}
+.arrow_1 {
+    overflow: visible;
+    position: absolute;
+    width: 19.5px;
+    height: 23.132px;
+    left: 599px;
+    top: 632.934px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#arrow_2 {
+    fill: rgba(79,159,76,1);
+}
+.arrow_2 {
+    overflow: visible;
+    position: absolute;
+    width: 19.5px;
+    height: 23.132px;
+    left: 599px;
+    top: 777.934px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#arrow_3 {
+    fill: rgba(255,255,255,1);
+}
+.arrow_3 {
+    overflow: visible;
+    position: absolute;
+    width: 19.5px;
+    height: 23.132px;
+    left: 599px;
+    top: 854.934px;
+    transform: matrix(1,0,0,1,0,0);
+}
+#goal {
+    left: 145px;
+    top: 391px;
+    position: absolute;
+    overflow: visible;
+    width: 58px;
+    height: 16px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(110,110,110,1);
+}
+#current {
+    left: 152px;
+    top: 331px;
+    position: absolute;
+    overflow: visible;
+    width: 51px;
+    height: 16px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    color: rgba(161,161,161,1);
+}
+#currentMinutes {
+    left: 147px;
+    top: 351px;
+    position: absolute;
+    overflow: visible;
+    width: 60px;
+    height: 36px;
+    text-align: left;
+    font-family: Segoe UI;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    color: rgba(57,57,57,1);
+}
